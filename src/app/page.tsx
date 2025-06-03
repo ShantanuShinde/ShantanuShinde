@@ -1,8 +1,8 @@
 import localFont from 'next/font/local'
 import { TextIterator } from '@/components/text-iterator'
-import { pdfjs, Document, Page } from 'react-pdf'
-
-//pdfjs.GlobalWorkerOptions.workerSrc = `https://unpkg.com/pdfjs-dist@${pdfjs.version}/build/pdf.worker.min.js`;
+import { Button } from '@/components/ui/button'
+import { Card } from '@/components/ui/card'
+import Link from "next/link"
 
 const tigerious = localFont({
   src: '../../public/fonts/Tigerious-ywyKe.otf'
@@ -15,9 +15,12 @@ export default function Home() {
   <div className='mx-w-4xl mx-auto text-center'>
     <h1 className={`${tigerious.className} text-9xl`}>Shantanu Shinde</h1>
     <TextIterator texts={texts} interval={9000} className='text-3xl m-6'/>
-    {/* <Document file="../../public/documents/ECS Editable Resume8.pdf">
-      <Page pageIndex={0}/>
-    </Document> */}
+        {/* View PDF button positioned at top right */}
+          <Button className="max-w-md absolute top-4 right-4" asChild size="sm" variant="outline">
+            <Link href="/view_resume">
+              View Resume
+            </Link>
+          </Button>
   </div>
   );
 }

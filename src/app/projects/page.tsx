@@ -16,10 +16,17 @@ import {
   SiUnity,
   SiDotnet,
   SiSqlite,
-  SiFlask
+  SiFlask,
+  SiSpringboot,
+  SiMulesoft,
+  SiKubernetes,
+  SiTensorflow,
+  SiJupyter,
+  SiKeras
 } from "react-icons/si"
 import { TbBrandCSharp } from "react-icons/tb";
 import { VscAzureDevops } from "react-icons/vsc";
+import { FaJava } from "react-icons/fa";
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip"
 
 export default function ProjectsShowcase() {
@@ -41,10 +48,16 @@ export default function ProjectsShowcase() {
     Dotnet: {icon: SiDotnet, color: "text-purple-400"},
     SQLite: {icon: SiSqlite, color: "text-blue-400"},
     AzureDevOps: {icon: VscAzureDevops, color: "text-blue-400"},
-    Flask: {icon: SiFlask, color: "text-orange-400"}
+    Flask: {icon: SiFlask, color: "text-black-400"},
+    Java: {icon: FaJava, color: "text-orange-400"},
+    Springboot: {icon: SiSpringboot, color: "text-green-400"},
+    MuleSoft: {icon: SiMulesoft, color: "text-black-400"},
+    Kubernetes: {icon: SiKubernetes, color: "text-blue-400"},
+    Tensorflow: {icon: SiTensorflow, color: "text-orange-400"},
+    Keras: {icon: SiKeras, color: "text-red-400"},
+    Jupyter: {icon: SiJupyter, color: "text-orange-400"},
   }
 
-  // Sample project data - replace with your own projects
   const projects = [
     {
       id: 1,
@@ -52,7 +65,7 @@ export default function ProjectsShowcase() {
       description:
         "Personal portfolio website showcasing my skills and projects.",
       technologies: ["Next.js", "React", "Tailwind CSS", "TypeScript", "Node.js"],
-      githubUrl: "https://github.com/ShantanuShinde/Portfolio-Website",
+      githubUrl: "https://github.com/ShantanuShinde/ShantanuShinde.github.io",
     },
     {
       id: 2,
@@ -79,11 +92,25 @@ export default function ProjectsShowcase() {
     },
     {
       id: 5,
+      title: "NI Hardware Activation REST API",
+      description: "A REST API that generates activation codes for subscription based export controlled and non-export controlled features of NI Hardwares.",
+      technologies: ["Java", "Springboot", "Mulesoft", "Kubernetes", "AzureDevOps"],
+      githubUrl: "",
+    },
+    {
+      id: 6,
       title: "Database Migration Tool for NI VLM",
-      description: "A tool that converts Microsoft SQL Server licensing database into SQLite equivalent for the NI Volume License Manager.",
+      description: "A automated tool that converts SQL CE licensing database into SQLite equivalent for the NI Volume License Manager.",
       technologies: ["Dotnet", "SQLite", "AzureDevOps"],
       githubUrl: "",
     },
+    {
+      id: 7,
+      title: "Character Recognition using CNN",
+      description: "This project involves recognizing handwritten English characters from images using a Convolutional Neural Network (CNN). The images are preprocessed to remove noise and binarized before being stored in a CSV file for training. The CNN model, implemented in Keras, was trained on 15,948 samples over 50 epochs with a batch size of 64, achieving ~94.7% accuracy on both training and validation sets",
+      technologies: ["Python", "Tensorflow", "Keras", "Jupyter"],
+      githubUrl: "https://github.com/ShantanuShinde/Character-Recognition-with-CNN"
+    }
   ]
 
   return (
@@ -96,16 +123,13 @@ export default function ProjectsShowcase() {
         </div>
 
         <div className="relative">
-          {/* Main connecting line */}
           <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-gradient-to-b from-cyan-500 via-purple-500 to-cyan-500 opacity-60"></div>
 
           <div className="space-y-12">
             {projects.map((project, index) => (
               <div key={project.id} className="relative flex items-center">
-                {/* Connection node */}
                 <div className="absolute left-6 w-4 h-4 bg-gradient-to-r from-cyan-400 to-purple-400 rounded-full border-2 border-slate-900 shadow-lg shadow-cyan-500/25 z-10"></div>
 
-                {/* Project card */}
                 <div className="ml-16 w-full">
                   <Card className="bg-slate-800/50 border-slate-700 hover:border-cyan-500/50 transition-all duration-300 backdrop-blur-sm hover:shadow-lg hover:shadow-cyan-500/10">
                     <CardHeader>
@@ -158,7 +182,6 @@ export default function ProjectsShowcase() {
           </div>
         </div>
 
-        {/* Bottom decoration */}
         <div className="mt-16 flex justify-center">
           <div className="w-32 h-0.5 bg-gradient-to-r from-transparent via-cyan-500 to-transparent"></div>
         </div>

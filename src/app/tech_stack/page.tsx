@@ -3,7 +3,6 @@
 import { useState } from "react"
 import dynamic from "next/dynamic"
 
-// Dynamically import IconCloud to avoid SSR issues
 const IconCloud = dynamic(() => import("@/components/icon-cloud"), { ssr: false })
 
 const technologies = [
@@ -42,26 +41,24 @@ export default function TechStack() {
 
   return (
     <div className="min-h-screen relative overflow-hidden">
-      {/* Background decoration */}
       <div className="absolute inset-0 opacity-20">
         <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-blue-500 rounded-full blur-3xl"></div>
         <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-purple-500 rounded-full blur-3xl"></div>
         <div className="absolute top-1/2 left-3/4 w-96 h-96 bg-green-500 rounded-full blur-3xl"></div>
       </div>
 
-      {/* Header */}
       <div className="relative z-10 text-center pt-16 pb-8">
-        <h1 className="text-4xl md:text-6xl font-bold text-slate-800 dark:text-slate-100 mb-4">My Tech Stack</h1>
+        <h1 className="text-5xl font-bold mb-4 bg-gradient-to-r from-cyan-400 via-purple-400 to-cyan-400 bg-clip-text text-transparent">
+            My Tech Stack
+          </h1>
       </div>
 
-      {/* Icon Cloud Container */}
       <div className="relative z-10 flex justify-center items-center min-h-[70vh]">
         <div className="w-full max-w-4xl h-[500px] flex justify-center items-center">
           <IconCloud iconSlugs={technologies} />
         </div>
       </div>
 
-      {/* Technology Grid for Reference */}
       <div className="relative z-10 max-w-6xl mx-auto px-4 pb-16 mt-16">
         <div className="bg-white/60 dark:bg-slate-800/60 backdrop-blur-sm rounded-2xl p-8 border border-slate-200/50 dark:border-slate-700/50">
           <h2 className="text-2xl font-semibold text-slate-800 dark:text-slate-100 mb-6 text-center">
@@ -92,6 +89,7 @@ export default function TechStack() {
               "PyTorch",
               "Tensorflow",
               "LangChain",
+              ".NET",
               "Spring Boot",
               "SQLite",
               "Blazor",
