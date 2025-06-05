@@ -12,8 +12,8 @@ export default function WorkExperiencePage() {
       description:
         "Teaching and conducting coding workshops for school students as part of computer science outreach programs.",
       responsibilities: [
-        "Helping to conduct coding workshops and events for school students",
-        "Acting as an instructor to present and teach workshop materials and resolve doubts",
+        "Helping to conduct coding workshops and events for school students.",
+        "Acting as an instructor to present and teach workshop materials and resolve doubts.",
       ],
     },
     {
@@ -24,13 +24,13 @@ export default function WorkExperiencePage() {
       period: "January 2021 – June 2024",
       description: "Progressed through multiple roles developing enterprise software solutions and AI-powered tools.",
       responsibilities: [
-        "Developed a prototype chatbot for NI Customer Support using GPT-3, Python, Prompt-Engineering with chatbot web interface using NodeJS",
-        "Worked on a Similar Yammer post detector that searched for the most similar yammer post using BERT vector outputs and cosine similarity. Integrated that into a Yammer group using Power Automate, gRPC, Azure Function App and Azure Container Instance",
-        "Helped with development of gRPC API wrappers for NI Device Driver APIs using Python, C++, LabVIEW and wrote automated tests using gtest",
-        "Implemented Linux web service for LabVIEW web interface using C++",
+        "Developed a prototype chatbot for NI Customer Support using GPT-3, Python, Prompt-Engineering with chatbot web interface using NodeJS.",
+        "Worked on a Similar Yammer post detector that searched for the most similar yammer post using BERT vector outputs and cosine similarity. Integrated that into a Yammer group using Power Automate, gRPC, Azure Function App and Azure Container Instance.",
+        "Helped with development of gRPC API wrappers for NI Device Driver APIs using Python, C++, LabVIEW and wrote automated tests using gtest.",
+        "Implemented Linux web service for LabVIEW web interface using C++.",
         "Worked on developing Hardware Configuration Utility using .NET Core which gives information and allows configuration of NI Hardware Devices.",
-        "Implemented Hardware Licensing Activation API using Java, Springboot, Kubernetes, Micro Service architecture, Maven and Azure Pipeline for deployment, MuleSoft for proxy API",
-        "Updated NI Volume License Manager to use SQLite database in place of SQL CE database using C# .NET, SQLite, SQLite encryption library and wrote automated testing using XUnit and Moq",
+        "Implemented Hardware Licensing Activation API using Java, Springboot, Kubernetes, Micro Service architecture, Maven and Azure Pipeline for deployment, MuleSoft for proxy API.",
+        "Updated NI Volume License Manager to use SQLite database in place of SQL CE database using C# .NET, SQLite, SQLite encryption library and wrote automated testing using XUnit and Moq.",
         "Awarded 'Rookie of the Year' at NI Global R&D Excellence Awards 2022 for outstanding performance.",
       ],
     },
@@ -42,9 +42,9 @@ export default function WorkExperiencePage() {
       period: "May 2019 – August 2019",
       description: "Developed web applications focusing on 3D simulation and computer vision technologies.",
       responsibilities: [
-        "Developed 3D simulation web application using JavaScript 3D library",
-        "Implemented Image Processing and Computer Vision web application using Python, OpenCV, Flask",
-        "Received a letter of commendation for good performance",
+        "Developed 3D simulation web application using JavaScript 3D library.",
+        "Implemented Image Processing and Computer Vision web application using Python, OpenCV, Flask.",
+        "Received a letter of commendation for good performance.",
       ],
     },
   ]

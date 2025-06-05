@@ -107,7 +107,7 @@ export default function ProjectsShowcase() {
     {
       id: 7,
       title: "Character Recognition using CNN",
-      description: "This project involves recognizing handwritten English characters from images using a Convolutional Neural Network (CNN). The images are preprocessed to remove noise and binarized before being stored in a CSV file for training. The CNN model, implemented in Keras, was trained on 15,948 samples over 50 epochs with a batch size of 64, achieving ~94.7% accuracy on both training and validation sets",
+      description: "This project involves recognizing handwritten English characters from images using a Convolutional Neural Network (CNN). The images are preprocessed to remove noise and binarized before being stored in a CSV file for training. The CNN model, implemented in Keras, was trained on 15,948 samples over 50 epochs with a batch size of 64, achieving ~94.7% accuracy on both training and validation sets.",
       technologies: ["Python", "Tensorflow", "Keras", "Jupyter"],
       githubUrl: "https://github.com/ShantanuShinde/Character-Recognition-with-CNN"
     }
