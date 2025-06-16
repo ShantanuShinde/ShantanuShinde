@@ -16,10 +16,10 @@ export default function Home() {
     <h1 className={`${tigerious.className} text-4xl sm:text-7xl md:text-8xl text-center`}>Shantanu Shinde</h1>
     <TextIterator texts={texts} interval={9000} className='w-full text-center text-1xl sm:text-3xl sm:text-left m-3 sm:m-6'/>
     <div className='flex justify-left gap-6 m-3 sm:text-3xl sm:m-6'>
-      <Link href="https://github.com/ShantanuShinde">
+      <Link target='_blank' href="https://github.com/ShantanuShinde">
         <SiGithub className=" hover:text-gray-600 transition-colors"/>
       </Link>
-      <Link href="https://www.linkedin.com/in/shantanu-shinde123">
+      <Link target='_blank' href="https://www.linkedin.com/in/shantanu-shinde123">
         <SiLinkedin className="hover:text-gray-600 transition-colors"/>
       </Link>
       <Link href="mailto:shinde.shantanu21@gmail.com">
