@@ -8,7 +8,7 @@ const tigerious = localFont({
   src: '../../public/fonts/Tigerious-ywyKe.otf'
 })
 
-const texts = ['Software Engineer', 'Machine Learning Enthusiast', 'Problem Solver', 'Dungeons and Dragons Enjoyer', 'Gamer']
+const texts = ['Software Engineer', 'Machine Learning Enthusiast', 'Problem Solver', 'Game Dev', 'Data Science Aficionado', 'Dungeons and Dragons Enjoyer', 'Gamer', 'History Nerd']
 
 export default function Home() {
   return (
