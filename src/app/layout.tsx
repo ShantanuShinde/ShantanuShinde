@@ -3,6 +3,7 @@ import { ReactNode } from 'react';
 import { JetBrains_Mono } from 'next/font/google'
 import ParticlesBackground from '@/components/particle-background';
 import Navbar from '@/components/navbar';
+import { Analytics } from "@vercel/analytics/next"
 
 const jetBrains = JetBrains_Mono({
   subsets: ['latin'],
@@ -28,6 +29,7 @@ export default function RootLayout({
         <ParticlesBackground/>
         <Navbar/>
         <main className="flex-grow flex items-center justify-center relative pt-18">{children}</main>
+        <Analytics/>
       </body>
     </html>
   );
