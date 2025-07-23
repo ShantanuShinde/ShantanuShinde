@@ -7,7 +7,7 @@ export default function PDFViewerPage() {
     <div className="flex h-screen w-full flex-col">
       <div className="flex-1 p-4">
         <div className="h-full w-full rounded-lg border bg-white shadow-sm">
-          <iframe src="/documents/resume.pdf" className="h-full w-full rounded-lg" title="Resume" />
+          <iframe src="/documents/myresume.pdf" className="h-full w-full rounded-lg" title="Resume" />
         </div>
       </div>
     </div>
