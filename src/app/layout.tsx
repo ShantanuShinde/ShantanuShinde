@@ -28,7 +28,7 @@ export default function RootLayout({
       <body className={`${jetBrains.className} bg-[#0f0f0f] text-gray-300 flex flex-col`}>
         <ParticlesBackground/>
         <Navbar/>
-        <main className="flex-grow flex items-center justify-center relative pt-18">{children}</main>
+        <main className="flex-grow flex items-center justify-center relative mt-17">{children}</main>
         <Analytics/>
       </body>
     </html>
