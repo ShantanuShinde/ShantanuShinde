@@ -19,7 +19,7 @@ export default function Home() {
       <Link target='_blank' href="https://github.com/ShantanuShinde">
         <SiGithub className=" hover:text-gray-600 transition-colors"/>
       </Link>
-      <Link target='_blank' href="https://www.linkedin.com/in/shantanu-shinde123">
+      <Link target='_blank' href="https://www.linkedin.com/in/shantanushinde1">
         <SiLinkedin className="hover:text-gray-600 transition-colors"/>
       </Link>
       <Link href="mailto:shinde.shantanu21@gmail.com">

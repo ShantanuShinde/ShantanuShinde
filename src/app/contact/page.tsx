@@ -67,7 +67,7 @@ export default function ContactPage() {
     },
     {
       name: "LinkedIn",
-      url: "https://www.linkedin.com/in/shantanu-shinde123/",
+      url: "https://www.linkedin.com/in/shantanushinde1/",
       icon: Linkedin,
       color: "hover:text-blue-400",
       description: "Connect with me professionally",
