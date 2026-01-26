@@ -10,7 +10,7 @@ export default function WorkExperiencePage() {
       location: "Richardson, TX, US",
       period: "August 2025 – Present",
       description:
-        "Teaching and conducting coding workshops for school students as part of computer science outreach programs.",
+        "Helping professor with grading of assignments of undergraduate computer science course.",
       responsibilities: [
         "Evaluated 300+ submissions across 10+ theory and coding assignments for 30+ honors CS students and created solutions for Data Structures and Foundation of Algorithm Analysis course.",
       ],
@@ -22,7 +22,7 @@ export default function WorkExperiencePage() {
       location: "Richardson, TX, US",
       period: "September 2024 – June 2025",
       description:
-        "Helping professor with grading of assignments of undergraduate computer science course.",
+        "Teaching and conducting coding workshops for school students as part of computer science outreach programs.",
       responsibilities: [
         "Helped conduct coding workshops and events for school students.",
         "Acted as an instructor to present and teach workshop materials and resolve doubts.",
