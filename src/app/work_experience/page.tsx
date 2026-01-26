@@ -5,19 +5,31 @@ export default function WorkExperiencePage() {
   const experiences = [
     {
       id: 1,
-      role: "CS Outreach Instructor",
+      role: "Computer Science Graduate Grader",
       organization: "University of Texas at Dallas",
       location: "Richardson, TX, US",
-      period: "September 2024 – Present",
+      period: "August 2025 – Present",
       description:
         "Teaching and conducting coding workshops for school students as part of computer science outreach programs.",
       responsibilities: [
-        "Helping to conduct coding workshops and events for school students.",
-        "Acting as an instructor to present and teach workshop materials and resolve doubts.",
+        "Evaluated 300+ submissions across 10+ theory and coding assignments for 30+ honors CS students and created solutions for Data Structures and Foundation of Algorithm Analysis course.",
       ],
     },
     {
       id: 2,
+      role: "CS Outreach Instructor",
+      organization: "University of Texas at Dallas",
+      location: "Richardson, TX, US",
+      period: "September 2024 – June 2025",
+      description:
+        "Teaching and conducting coding workshops for school students as part of computer science outreach programs.",
+      responsibilities: [
+        "Helped conduct coding workshops and events for school students.",
+        "Acted as an instructor to present and teach workshop materials and resolve doubts.",
+      ],
+    },
+    {
+      id: 3,
       role: "Software Engineering Intern → Software Engineer → Staff Software Engineer",
       organization: "NI (National Instruments) (Emerson)",
       location: "Bangalore, India",
@@ -35,7 +47,7 @@ export default function WorkExperiencePage() {
       ],
     },
     {
-      id: 3,
+      id: 4,
       role: "Summer Intern",
       organization: "International Institute of Information Technology",
       location: "Hyderabad, India",

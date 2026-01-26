@@ -22,11 +22,16 @@ import {
   SiKubernetes,
   SiTensorflow,
   SiJupyter,
-  SiKeras
+  SiKeras,
+  SiAmazondynamodb,
+  SiAmazons3,
+  SiAwslambda,
+  SiJavascript,
+  SiGithubactions,
 } from "react-icons/si"
 import { TbBrandCSharp } from "react-icons/tb";
 import { VscAzureDevops } from "react-icons/vsc";
-import { FaJava } from "react-icons/fa";
+import { FaJava, FaAws } from "react-icons/fa";
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip"
 
 export default function ProjectsShowcase() {
@@ -56,11 +61,25 @@ export default function ProjectsShowcase() {
     Tensorflow: {icon: SiTensorflow, color: "text-orange-400"},
     Keras: {icon: SiKeras, color: "text-red-400"},
     Jupyter: {icon: SiJupyter, color: "text-orange-400"},
+    AWS: {icon: FaAws, color: "text-orange-400"},
+    AmazonDynamoDB: {icon: SiAmazondynamodb, color: "text-purple-400"},
+    AmazonS3: {icon: SiAmazons3, color: "text-green-400"},
+    AWSLambda: {icon: SiAwslambda, color: "text-orange-400"},
+    JavaScript: {icon: SiJavascript, color: "text-yellow-400"},
+    GithubActions: {icon: SiGithubactions, color: "text-black-400"},
   }
 
   const projects = [
     {
       id: 1,
+      title: "AWS Hosted Resume with visitor count",
+      description:
+        "HTML Resume website hosted on AWS S3 with visitor count functionality using AWS Lambda and DynamoDB and GitHub Actions for CI/CD.",
+      technologies: ["AWS", "Amazon S3", "AWS Lambda", "Amazon DynamoDB", "JavaScript", "Github Actions"],
+      githubUrl: "https://github.com/ShantanuShinde/AWS-Resume",
+    },
+    {
+      id: 2,
       title: "Portfolio Website",
       description:
         "Personal portfolio website showcasing my skills and projects.",
@@ -68,7 +87,7 @@ export default function ProjectsShowcase() {
       githubUrl: "https://github.com/ShantanuShinde/ShantanuShinde.github.io",
     },
     {
-      id: 2,
+      id: 3,
       title: "Sign-opsis - Making media accessible through sign language",
       description:
         "A web application that converts audio or video input into American Sign Language and renders a downloadable 3D animation of the translation.",
@@ -76,7 +95,7 @@ export default function ProjectsShowcase() {
       githubUrl: "https://github.com/ShantanuShinde/HackAI",
     },
     {
-      id: 3,
+      id: 4,
       title: "CourseCOMET - Courses and Professors Insight Chat Bot",
       description:
         "A chatbot that helps UT Dallas students choose courses and professors by providing ratings, reviews, grade distributions, and side-by-side professor comparisons.",
@@ -84,28 +103,28 @@ export default function ProjectsShowcase() {
       githubUrl: "https://github.com/ShantanuShinde/Professor-Course-Insight-Bot",
     },
     {
-      id: 4,
+      id: 5,
       title: "Don't Squish the Squirrel! - Squirrel minigames",
       description: "A Unity 3D game with multiple minigames involving cute squirrels trying to collect nuts while avoiding threats and obstacles.",
       technologies: ["Unity", "CSharp"],
       githubUrl: "https://github.com/SanicSpeed1238/SquirrelGames",
     },
     {
-      id: 5,
+      id: 6,
       title: "NI Hardware Activation REST API",
       description: "A REST API that generates activation codes for subscription based export controlled and non-export controlled features of NI Hardwares.",
       technologies: ["Java", "Springboot", "Mulesoft", "Kubernetes", "AzureDevOps"],
       githubUrl: "",
     },
     {
-      id: 6,
+      id: 7,
       title: "Database Migration Tool for NI VLM",
       description: "A automated tool that converts SQL CE licensing database into SQLite equivalent for the NI Volume License Manager.",
       technologies: ["Dotnet", "SQLite", "AzureDevOps"],
       githubUrl: "",
     },
     {
-      id: 7,
+      id: 8,
       title: "Character Recognition using CNN",
       description: "This project involves recognizing handwritten English characters from images using a Convolutional Neural Network (CNN). The images are preprocessed to remove noise and binarized before being stored in a CSV file for training. The CNN model, implemented in Keras, was trained on 15,948 samples over 50 epochs with a batch size of 64, achieving ~94.7% accuracy on both training and validation sets.",
       technologies: ["Python", "Tensorflow", "Keras", "Jupyter"],
