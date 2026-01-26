@@ -75,7 +75,7 @@ export default function ProjectsShowcase() {
       title: "AWS Hosted Resume with visitor count",
       description:
         "HTML Resume website hosted on AWS S3 with visitor count functionality using AWS Lambda and DynamoDB and GitHub Actions for CI/CD.",
-      technologies: ["AWS", "Amazon S3", "AWS Lambda", "Amazon DynamoDB", "JavaScript", "Github Actions"],
+      technologies: ["AWS", "AmazonS3", "AWSLambda", "AmazonDynamoDB", "JavaScript", "GithubActions"],
       githubUrl: "https://github.com/ShantanuShinde/AWS-Resume",
     },
     {
